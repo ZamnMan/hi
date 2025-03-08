@@ -3837,14 +3837,15 @@ btn("riot control", function()
 	t.setWalkSpeed(15)
       
 
-local movingla = getPartFromMesh(7135685427,12433613796)
-local BatWeld = getPartJoint(movingla)
+local movingbat = getPartFromMesh(7135685427,12433613796)
+local BatWeld = getPartJoint(movingbat)
 
-local movingra = getPartFromMesh(4596156409,4596166483)
-local ShieldWeld = getPartJoint(movingra)
+local movingshl = getPartFromMesh(4596156409,4596166483)
+local ShieldWeld = getPartJoint(movingshl)
 
 	addmode("default",{
 		idle=function()
+
 		ShieldWeld.C0=Lerp(ShieldWeld.C0,cfMul(cf(-0.1,-0.09-0.03*sin((sine-0.19) * 4),2),angles(-3.4033920413889427+0.03490658503988659*sin((sine+0.2)*4),3.490658503988659,3.141592653589793)),deltaTime) 
 LeftShoulder.C0=Lerp(LeftShoulder.C0,cfMul(cf(-0.8,0.25+0.04*sin((sine-0.365)*4),-0.4),angles(3.4033920413889427+0.03490658503988659*sin((sine+0.2)*-4),-0.3490658503988659,1.6580627893946132+0.012217304763960306*sin((sine-0.25)*4))),deltaTime) 
 Neck.C0=Lerp(Neck.C0,cfMul(cf(0,1,0),angles(-1.361356816555577+0.05235987755982989*sin((sine+0.075)*-4),0.08726646259971647,3.490658503988659)),deltaTime) 
