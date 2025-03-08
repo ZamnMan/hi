@@ -3834,7 +3834,8 @@ btn("riot control", function()
 	local Neck=getJoint("Neck")
         local getPartFromMesh=t.getPartFromMesh
         local getPartJoint=t.getPartJoint
-	t.setWalkSpeed(10)
+	
+t.setWalkSpeed(7)
       
 
 local movingbat = getPartFromMesh(7135685427,12433613796)
