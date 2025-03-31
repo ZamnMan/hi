@@ -3987,7 +3987,7 @@ LeftShoulder.C0=Lerp(LeftShoulder.C0,cfMul(cf(-0.8,0.9,-0.3-0.1*sin((sine+0.4)*4
 	})
 end)
 
-btn("[FATED]", function()
+btn("F A T E D", function()
 
 
 	local t=reanimate()
